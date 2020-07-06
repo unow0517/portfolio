@@ -4,9 +4,15 @@ You can use the [editor on GitHub](https://github.com/unow0517/portfolio/edit/ma
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+[Biography](biography.html)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+###Web development
+
+
+
+###Machine Learning 
+
 
 ```markdown
 Syntax highlighted code block
