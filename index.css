@@ -7,7 +7,7 @@
 
     /* padding, profile */
     --padding: 12px;
-    --profile: 100px;
+    --profile: 80px;
     --webpage: 150px;
 
     /* font-size */
@@ -26,6 +26,8 @@
     margin: 0;
     box-sizing:border-box;
     font-family: 'PT Serif', serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 body{
@@ -34,12 +36,13 @@ body{
 
 section{
     padding: 0 var(--padding);
-    margin-bottom: var(--padding);
+    margin: var(--padding) 0;
     border-bottom: 1px solid grey;
 }
 
 section > ul{
     border-top: 1px solid grey;
+    padding: var(--padding) 0;
 }
 
 section > .title{
@@ -50,11 +53,15 @@ section > .title{
 
 /* nav */
 nav{
+    position: sticky;
+    top:0;
     background-color: var(--blue);
     display:flex;
     align-items: center;
     justify-content: space-around;
     font-size: var(--font-small);
+    padding: var(--padding) 0;
+    opacity: 0.9;
     
 }
 
@@ -65,28 +72,33 @@ nav img{
 }
 
 nav ul{
-    list-style:none;
     display:flex;
-    color: var(--ivory); 
+    color: var(--ivory);
 }
 
 nav li{
-    padding-right: calc(var(--padding)*20);
-    
+    padding-right: calc(var(--padding)*10);
 }
 
 
 
 /* Works */
+.works{
+
+}
 .works > .title{
     font-size: var(--font-large);
 }
 
-.works li{
+.works >ul > li > a{
     display:flex;
     border: 1px solid grey;
     padding: var(--padding);
     margin-bottom: calc(var(--padding)*1);
+}
+
+.works >ul > li :hover{
+    color: rgb(145, 165, 255);
 }
 
 .works img{
@@ -106,7 +118,6 @@ nav li{
 .language ul{
     display:flex;
     justify-content: space-evenly;
-    list-style: none;
     font-size: var(--font-small);
     padding: calc(var(--padding)*10) 0;
 }
@@ -117,7 +128,6 @@ nav li{
 .contact ul{
     display:flex;
     justify-content: space-evenly;
-    list-style: none;
     font-size: var(--small);
     padding: calc(var(--padding)*10) 0;
     font-size: calc(var(--font-large)*0.7);
