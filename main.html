@@ -5,25 +5,28 @@
         <link href="index.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
         <title>Who's YunHo?</title>
+        <script src='scroll.js'></script>
     </head>
     <body>
         <!-- Navigation -->
         <nav>
             <img src="./image/1.jpg" alt="profile image">
             <ul>
-                <li>Works</li>
-                <li>Skills</li>
-                <li>Language</li>
-                <li>Contact</li>
+                <li><button onclick="goToWorks()">Works</button></li>
+                <li><button onclick="goToSkills()">Skills</button></li>
+                <li><button onclick="goToLanguage()">Language</button></li>
+                <li><button onclick="goToContact()">Contact</button></li>
+                <li>
+                    <a href="https://unow0517.github.io/Learninghistory/main.html" target='_blank'>Log</a>
+                </li>
             </ul>
         </nav>
 
         <!-- Section -->
-        <section class="works">
+        <section class="works" id='works'>
             <span class="title">Works</span>
             <ul>
                 <li>
-<<<<<<< HEAD
                     <a class='link' href='https://unow0517.github.io/youtube/index.html' target="_blank">
                         <img src="./image/youtube.jpg" alt="youtubeimage">
                         <div>
@@ -58,16 +61,31 @@
                 </li>
             </ul>
         </section>
-        <section class='skills'>
-            <span class="title">Skills</span>
-                <div>
-                    <span>Programming</span>
-                </div>
-                <div>
-                    <span>Others</span>
-                </div>
+        <section class='skills' id='skills'>
+            <span class="title">Skills</span>     
+            <ul>
+                <li>
+                    <div class='webdevelopment'> 
+                        <span>Web Development</span>
+                        <img class='htmlcssjs' src="./image/programming.png" alt="programming">
+                        <ul class='sqlphp'>
+                            <li><img class= 'mysql' src="./image/mysql.png" alt="mysql"></li>
+                            <li><img class= 'php' src="./image/php.png" alt="php"></li>                            
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class='others'> 
+                        <span>Others</span>
+                        <div>
+                            <img src="./image/arcgis.png" alt="arcgis">
+                            <img src="./image/R.png" alt="r">
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
-        <section class="language">
+        <section class="language"  id='language'>
             <span class='title'>Language</span>
             <ul>
                 <li>
@@ -84,11 +102,12 @@
                 </li>
             </ul>
         </section>
-        <section class="contact">
+        <section class="contact"  id='contact'>
             <span class='title'>Contact</span>
             <ul>
                 <li>unow1992@gmail.com</li>
             </ul>
         </section>
+
     </body>
 </html>

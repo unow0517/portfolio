@@ -9,6 +9,8 @@
     --padding: 12px;
     --profile: 80px;
     --webpage: 150px;
+    --logo: 200px;
+    --section-margin: 500px;
 
     /* font-size */
     --font-large: 48px;
@@ -30,19 +32,26 @@
     list-style: none;
 }
 
+button{
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
 body{
     background-color: var(--ivory);
 }
 
 section{
     padding: 0 var(--padding);
-    margin: var(--padding) 0;
+    margin: var(--section-margin) 0;
     border-bottom: 1px solid grey;
 }
 
 section > ul{
     border-top: 1px solid grey;
-    padding: var(--padding) 0;
+    padding: calc(var(--padding)*10) 0;
 }
 
 section > .title{
@@ -62,6 +71,7 @@ nav{
     font-size: var(--font-small);
     padding: var(--padding) 0;
     opacity: 0.9;
+
     
 }
 
@@ -72,14 +82,16 @@ nav img{
 }
 
 nav ul{
-    display:flex;
-    color: var(--ivory);
+    display:flex; 
 }
 
 nav li{
     padding-right: calc(var(--padding)*10);
 }
 
+nav li a,button{
+    color: var(--ivory);
+}
 
 
 /* Works */
@@ -111,12 +123,57 @@ nav li{
 
 
 
+/* SKills */
+.skills ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+.skills li > div{
+    align-items: center;
+}
+.skills .webdevelopment .htmlcssjs{
+    height: var(--logo);
+}
+
+.skills .webdevelopment .mysql{
+    width: var(--logo);
+}
+.skills .webdevelopment .php{
+    width: var(--logo);
+}
+
+.skills .sqlphp{
+    display:flex;
+    flex-direction: row;
+}
+
+.skills .others img{
+    width: var(--logo);
+    height: var(--logo);
+    margin-right: calc(var(--padding)*5);
+}
+
+.skills ul li div{
+    display:flex;
+    flex-direction: column;
+}
+
+.skills .others div{
+    display:flex;
+    flex-direction: row;
+}
+.skills .title .skillsbox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+} 
 /* Language */
 .language ul{
     display:flex;
     justify-content: space-evenly;
     font-size: var(--font-small);
-    padding: calc(var(--padding)*10) 0;
+    padding: calc(var(--padding)*20) 0;
 }
 
 
@@ -126,6 +183,6 @@ nav li{
     display:flex;
     justify-content: space-evenly;
     font-size: var(--small);
-    padding: calc(var(--padding)*10) 0;
+    padding: calc(var(--padding)*20) 0;
     font-size: calc(var(--font-large)*0.7);
 }
