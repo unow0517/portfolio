@@ -76,8 +76,8 @@ nav{
 }
 
 nav img{
-    height:var(--profile);
-    width:var(--profile);
+    /* height:var(--profile); */
+    width: var(--profile);
     border-radius: 50%;
 }
 
