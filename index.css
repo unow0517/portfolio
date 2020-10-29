@@ -51,7 +51,7 @@ section{
 
 section > ul{
     border-top: 1px solid grey;
-    padding: calc(var(--padding)*10) 0;
+    padding: calc(var(--padding)*8) 0;
 }
 
 section > .title{
@@ -91,9 +91,12 @@ nav li{
 
 nav li a,button{
     color: var(--ivory);
+    /* padding: calc(2*(var(--padding)); */
 }
 
-
+nav li a:hover,button:hover{
+    background-color: #7cc0ff;
+}
 /* Works */
 .works > .title{
     font-size: var(--font-large);
@@ -132,15 +135,18 @@ nav li a,button{
 .skills li > div{
     align-items: center;
 }
+
+.skills div .title{
+    font-size: var(--font-medium);
+    margin-bottom: calc(var(--padding)*6);
+}
 .skills .webdevelopment .htmlcssjs{
     height: var(--logo);
 }
 
-.skills .webdevelopment .mysql{
+.skills .webdevelopment .php,.react,.mysql{
     width: var(--logo);
-}
-.skills .webdevelopment .php{
-    width: var(--logo);
+    margin-right: var(--padding);
 }
 
 .skills .sqlphp{

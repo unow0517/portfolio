@@ -2,7 +2,7 @@ function goToWorks() {
     var elmnt = document.getElementById("works");
     elmnt.scrollIntoView({
         behavior:'smooth', 
-        block: 'center',
+        block: 'end',
     });
 }
 function goToSkills() {
