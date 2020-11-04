@@ -10,6 +10,7 @@
     --profile: 80px;
     --webpage: 150px;
     --logo: 200px;
+    --logo-small: 150px;
     --section-margin: 500px;
 
     /* font-size */
@@ -154,20 +155,21 @@ nav li a:hover,button:hover{
     flex-direction: row;
 }
 
-.skills .others img{
-    width: var(--logo);
-    height: var(--logo);
-    margin-right: calc(var(--padding)*5);
-}
-
 .skills ul li div{
     display:flex;
     flex-direction: column;
 }
 
-.skills .others div{
+.skills .others img{
+    width: var(--logo-small);
+    height: var(--logo-small);
+    margin-right: calc(var(--padding)*5);
+}
+
+.skills .others > div{
     display:flex;
     flex-direction: row;
+    margin-bottom: calc(var(--padding)*2);
 }
 .skills .title .skillsbox{
     display:flex;
