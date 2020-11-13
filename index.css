@@ -89,9 +89,9 @@ section > .title{
 }
 
 nav img{
-    /* height:var(--profile); */
-    width: var(--profile);
-    border-radius: 50%;
+    height: calc(var(--profile)*0.8);
+    width: calc(var(--profile)*0.8);
+    border-radius: 50%
 }
 
 nav ul{
@@ -118,14 +118,10 @@ nav li a:hover,button:hover{
     font-size:24px;
 }
 
-=======
-    /* padding: calc(2*(var(--padding)); */
-}
-
 nav li a:hover,button:hover{
     background-color: #7cc0ff;
 }
->>>>>>> 6c0b08c2b579585b35c9e205eaad39f89bf02669
+
 /* Works */
 .works > .title{
     font-size: var(--font-large);
