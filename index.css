@@ -1,9 +1,9 @@
 :root{
     /* colors */
     --white-grey: rgb(231, 231, 231);
-    --ivory: #efc9af;
-    --dark-blue: #104c91;
-    --blue:#1f8ac0;
+    --ivory: #ffbf94;
+    --dark-blue: #0069e0;
+    --blue:#04abff;
 
     /* padding, profile */
     --padding: 12px;
@@ -59,9 +59,13 @@ section > .title{
         color:var(--dark-blue);
 }
 
+#works, #skills, #language, #contact{
+    margin-top:500px;
+}
+
 
 /* nav */
-nav{
+.navbar{
     position: sticky;
     top:0;
     background-color: var(--blue);
@@ -69,10 +73,18 @@ nav{
     align-items: center;
     justify-content: space-around;
     font-size: var(--font-small);
-    padding: var(--padding) 0;
+    padding: calc(var(--padding)*2) 0;
     opacity: 0.9;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%; 
+}
 
-    
+.navToggleButton{
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 32px;
+    font-size: 24px;
 }
 
 nav img{
@@ -91,8 +103,19 @@ nav li{
 
 nav li a,button{
     color: var(--ivory);
+    /* padding: var(--padding); */
 }
 
+nav li a:hover,button:hover{
+    background-color: var(--dark-blue);
+}
+
+.navToggleButton{
+    display: none;
+    position:absolute;
+    right: 12px;
+    font-size:24px;
+}
 
 /* Works */
 .works > .title{
@@ -104,6 +127,7 @@ nav li a,button{
     border: 1px solid grey;
     padding: var(--padding);
     margin-bottom: calc(var(--padding)*1);
+    border-radius: 5% ;
 }
 
 .works >ul > li :hover{
@@ -185,4 +209,46 @@ nav li a,button{
     font-size: var(--small);
     padding: calc(var(--padding)*20) 0;
     font-size: calc(var(--font-large)*0.7);
+}
+
+
+@media screen and (max-width:768px){
+    .navbar{
+        padding-bottom: 0;    
+    }
+
+    .navMenu{
+        display: none;
+        flex-direction: column;
+        font-size: var(--font-micro);        
+    }
+
+    .navImage{
+        display:none;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .navMenu li{
+        margin-bottom: var(--padding);
+    }
+
+    .navToggleButton{
+        display:block;
+    }
+
+    .navMenu.active,
+    .navImage.active{
+        display:flex;
+    }
+
+    .skills ul{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: calc(var(--padding)*10);
+    }
+
+    .navToggleButton.unfolded{
+        rotate:90deg;
+    }
 }

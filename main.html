@@ -5,13 +5,14 @@
         <link href="index.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
         <title>Who's YunHo?</title>
-        <script src='scroll.js'></script>
+        <script src='scrollAndFold.js' defer></script>
+        <script src="https://kit.fontawesome.com/dec3d6080a.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- Navigation -->
-        <nav>
-            <img src="./image/1.jpg" alt="profile image">
-            <ul>
+        <nav class='navbar'>
+            <img class = 'navImage' src="./image/1.jpg" alt="profile image">
+            <ul class='navMenu'>
                 <li><button onclick="goToWorks()">Works</button></li>
                 <li><button onclick="goToSkills()">Skills</button></li>
                 <li><button onclick="goToLanguage()">Language</button></li>
@@ -20,10 +21,13 @@
                     <a href="https://unow0517.github.io/Learninghistory/main.html" target='_blank'>Log</a>
                 </li>
             </ul>
+            <!-- <a href="#" class="navToggleButton">Fold</a> -->
+            <button class="navToggleButton"><i class="fas fa-caret-up"></i></button>
         </nav>
 
         <!-- Section -->
         <section class="works" id='works'>
+            <br><br><br><br><br><br><br><br><br><br>
             <span class="title">Works</span>
             <ul>
                 <li>
@@ -62,6 +66,7 @@
             </ul>
         </section>
         <section class='skills' id='skills'>
+            <br><br><br><br><br><br><br><br><br><br>
             <span class="title">Skills</span>     
             <ul>
                 <li>
@@ -86,6 +91,7 @@
             </ul>
         </section>
         <section class="language"  id='language'>
+            <br><br><br><br><br><br><br><br><br><br>
             <span class='title'>Language</span>
             <ul>
                 <li>
@@ -103,6 +109,7 @@
             </ul>
         </section>
         <section class="contact"  id='contact'>
+            <br><br><br><br><br><br><br><br><br><br>
             <span class='title'>Contact</span>
             <ul>
                 <li>unow1992@gmail.com</li>
