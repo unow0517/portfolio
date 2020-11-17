@@ -12,11 +12,7 @@ function goToWorks() {
     var elmnt = document.getElementById("works");
     elmnt.scrollIntoView({
         behavior:'smooth', 
-<<<<<<< HEAD:scroll.js
-        block: 'start',
-=======
         block: 'start'
->>>>>>> a2745e11f2201ed097fac9bb8c7d8bed08baab20:scrollAndFold.js
     });
 }
 function goToSkills() {
