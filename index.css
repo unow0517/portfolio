@@ -94,6 +94,11 @@ nav img{
     border-radius: 50%
 }
 
+
+nav img:hover{
+    box-sizing: initial;
+    border: 1px solid var(--dark-blue);
+}
 nav ul{
     display:flex; 
 }
@@ -122,6 +127,18 @@ nav li a:hover,button:hover{
     background-color: #7cc0ff;
 }
 
+/* MainTitle */
+.maintitle{
+    border:none;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 60px;
+    color: var(--dark-blue);
+}
+
+.me {
+    font-size: 40px;
+}
 /* Works */
 .works > .title{
     font-size: var(--font-large);

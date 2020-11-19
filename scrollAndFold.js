@@ -8,6 +8,14 @@ toggleButton.addEventListener('click',()=>{
     toggleButton.classList.toggle('unfolded')
 });
 
+function goToMainTitle() {
+    var elmnt = document.getElementById("maintitle");
+    elmnt.scrollIntoView({
+        behavior:'smooth', 
+        block: 'center'
+    });
+}
+
 function goToWorks() {
     var elmnt = document.getElementById("works");
     elmnt.scrollIntoView({
