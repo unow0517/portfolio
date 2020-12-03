@@ -261,6 +261,7 @@ nav li a:hover,button:hover{
 
     .navToggleButton{
         display:block;
+        color:white;
     }
 
     .navMenu.active,
