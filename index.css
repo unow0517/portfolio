@@ -9,8 +9,8 @@
     --padding: 12px;
     --profile: 80px;
     --webpage: 150px;
-    --logo: 200px;
-    --logo-small: 150px;
+    --logo: 150px;
+    --logo-small: 120px;
     --section-margin: 500px;
 
     /* font-size */
@@ -72,7 +72,6 @@ section > .title{
     background-color: var(--blue);
     display:flex;
     align-items: center;
-    justify-content: space-around;
     font-size: var(--font-small);
     padding: calc(var(--padding)*2) 0;
     opacity: 0.9;
@@ -91,20 +90,25 @@ section > .title{
 nav img{
     height: calc(var(--profile)*0.8);
     width: calc(var(--profile)*0.8);
-    border-radius: 50%
+    border-radius: 50%;
+    margin-left: 8%;
+    
 }
 
 
 nav img:hover{
     box-sizing: initial;
     border: 1px solid var(--dark-blue);
+
 }
 nav ul{
-    display:flex; 
+    display:flex;
+    width: 10%; 
+    margin-left: 10%;
 }
 
 nav li{
-    padding-right: calc(var(--padding)*10);
+    padding-right: 50% ;
 }
 
 nav li a,button{
@@ -144,6 +148,9 @@ nav li a:hover,button:hover{
     font-size: var(--font-large);
 }
 
+.works .imgtext{
+    display: flex;
+}
 .works >ul > li > a{
     display:flex;
     border: 1px solid grey;
@@ -170,13 +177,16 @@ nav li a:hover,button:hover{
 
 
 /* SKills */
-.skills ul{
+.skills > ul{
     display:flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skills li > div{
     align-items: center;
+    justify-content: space-around ;
+
 }
 
 .skills div .title{
@@ -192,9 +202,16 @@ nav li a:hover,button:hover{
     margin-right: var(--padding);
 }
 
-.skills .sqlphp{
+.skills .sqlphpreact{
     display:flex;
     flex-direction: row;
+}
+
+.skills >ul> li{
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+    margin-right: 10%;
 }
 
 .skills ul li div{
@@ -239,6 +256,7 @@ nav li a:hover,button:hover{
 
 
 @media screen and (max-width:768px){
+    /* Nav*/
     .navbar{
         padding-bottom: 0;    
     }
@@ -269,10 +287,45 @@ nav li a:hover,button:hover{
         display:flex;
     }
 
-    .skills ul{
+
+    /*Work */
+
+    .worksunit .imgtext{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .worksunit img{
+        float: right;
+    }
+
+    /*skills*/
+    .skills > ul{
         display:flex;
         flex-direction: column;
         margin-bottom: calc(var(--padding)*10);
+    }
+
+    .skills > ul> li{
+        justify-content: center;
+        margin-right: 0%;
+    }
+
+    .skills img{
+        margin-right: 5%;
+    }
+
+
+
+    .skills .htmlcssjs{
+        width: 60%;
+    }
+
+    .skills .sqlphpreact{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .navToggleButton.unfolded{
