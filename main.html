@@ -6,6 +6,11 @@
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
         <title>Who's YunHo?</title>
         <script src='scrollAndFold.js' defer></script>
+        <!-- Chart.js CDN -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js'></script>
+        <script src='chart.js' defer></script>
+        <!-- Chart.js CDN END-->
+        <script type = "text/javascript" src='https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js'></script>
         <script src="https://kit.fontawesome.com/dec3d6080a.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -231,6 +236,19 @@
             <span class="title">Skills</span>     
             <ul>
                 <li>
+                  <!-- trying to change canvas size -->
+                  <div class = 'divCanvas'>
+                    <canvas class = 'chart' id = 'mychart'></canvas>
+                  </div>                  
+                </li>
+                <li>
+                  <!-- trying to change canvas size -->
+                  <div class = 'divCanvas'>
+                    <canvas class = 'chart' id = 'mychart2'></canvas>
+                  </div>                  
+                </li>
+                <!-- OLD VERSION -->
+                <!-- <li>
                     <div class='webdevelopment'> 
                         <span class='title'>Web Development</span>
                         <img class='htmlcssjs' src="./image/programming.png" alt="programming">
@@ -257,7 +275,8 @@
                             <img src="./image/Illustrator.png" alt="Illustrator">
                         </div>
                     </div>
-                </li>
+                </li> -->
+                <!-- OLD VERSION END-->
             </ul>
         </section>
         <section class="language"  id='language'>
