@@ -8,12 +8,20 @@ toggleButton.addEventListener('click',()=>{
     toggleButton.classList.toggle('unfolded')
 });
 
-function goToMainTitle() {
-    var elmnt = document.getElementById("maintitle");
-    elmnt.scrollIntoView({
-        behavior:'smooth', 
-        block: 'center'
-    });
+// function goToMainTitle() {
+//     var elmnt = document.getElementById("maintitle");
+//     elmnt.scrollIntoView({
+//         behavior:'smooth', 
+//         block: 'center'
+//     });
+// }
+
+function goToAnimation() {
+  var elmnt = document.getElementById("img-sequence");
+  elmnt.scrollIntoView({
+      behavior:'smooth', 
+      block: 'start'
+  });
 }
 
 function goToWorks() {

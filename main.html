@@ -16,25 +16,42 @@
     <body>
         <!-- Navigation -->
         <nav class='navbar'>
-            <img class = 'navImage' onclick="goToMainTitle()" src="./image/biophoto.jpg" alt="profile image">
-            <ul class='navMenu'>
-                <li><button onclick="goToWorks()">Works</button></li>
-                <li><button onclick="goToSkills()">Skills</button></li>
-                <li><button onclick="goToLanguage()">Language</button></li>
-                <li><button onclick="goToContact()">Contact</button></li>
-                <li>
-                    <a href="log.html" target='_blank'>Log</a>
-                </li>
-            </ul>
-            <!-- <a href="#" class="navToggleButton">Fold</a> -->
-            <button class="navToggleButton"><i class="fas fa-caret-up"></i></button>
+          <img class = 'navImage' onclick="goToAnimation()" src="./image/biophoto.jpg" alt="profile image">
+          <ul class='navMenu'>
+              <li><button onclick="goToWorks()">Works</button></li>
+              <li><button onclick="goToSkills()">Skills</button></li>
+              <li><button onclick="goToLanguage()">Language</button></li>
+              <li><button onclick="goToContact()">Contact</button></li>
+              <li>
+                  <a href="log.html" target='_blank'>Log</a>
+              </li>
+          </ul>
+          <!-- <a href="#" class="navToggleButton">Fold</a> -->
+          <button class="navToggleButton"><i class="fas fa-caret-up"></i></button>
         </nav>
+        <!-- Navigation End -->      
+        <!-- ScrollAnimation -->
+        <div id = "img-sequence">
+          <canvas id="screen"></canvas>
+        </div>
+        <div class = "scrollBlank">
+          <h1 class='fadeInSection'>Here's where <br>I come from</h1>
+          <h1 class='fadeInSection'>Here's what <br>I have</h1>
+          <h1 class='fadeInSection'>Geoprogramming</h1>
+          <h1 class='fadeInSection'>Geographical <br>Information System</h1>
+          <h1 class='fadeInSection'>Web Development</h1>
+          <h1 class='fadeInSection'>Creativity</h1>
+          <h1 class='fadeInSection'>Eager-To-Learn</h1>
+          <h1 class='fadeInSection'>We are arrived, look around more about me!</h1>
+        </div>
+        <script src="scroll.js"></script>
+        <!-- ScrollAnimation End -->
 
         <!-- Section -->
-        <section class="maintitle" id='maintitle'>
+        <!-- <section class="maintitle" id='maintitle'>
             <span>"Programming change the world"</span><br>
             <span class='me'>-YunHo-</span>
-        </section>
+        </section> -->
 
         <section class="works" id='works'>
             <br><br><br><br><br><br><br><br><br><br>

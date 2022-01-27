@@ -34,6 +34,7 @@
     margin: 0;
     box-sizing:border-box;
     font-family: 'PT Serif', serif;
+    /* font-family: sans-serif; */
     text-decoration: none;
     list-style: none;
 }
@@ -81,7 +82,8 @@ section > .title{
     padding: calc(var(--padding)*2) 0;
     opacity: 0.9;
     border-bottom-left-radius: 8%;
-    border-bottom-right-radius: 8%; 
+    border-bottom-right-radius: 8%;
+    z-index: +1; 
 }
 
 .navToggleButton{
@@ -130,6 +132,40 @@ nav li a, nav li button{
 nav li a:hover,button:hover{
     background-color: var(--dark-blue);
     color: var(--dark-ivory);
+}
+
+/* Scroll Animation */
+
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+
+/* body{
+  font-family: sans-serif;
+} */
+
+.scrollBlank{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height: 9000px;
+  border: 3px dashed red;
+}
+
+.fadeInSection{
+  position:relative;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 8vw;
+  margin: auto;
+}
+
+#img-sequence{
+  position:fixed;
+  top:0px;
+  object-fit: cover;
+  z-index: -1;
 }
 
 /* MainTitle */
