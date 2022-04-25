@@ -1,85 +1,92 @@
 <DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <link href="index.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
-        <title>Who's YunHo?</title>
-        <script src='scrollAndFold.js' defer></script>
-        <!-- Chart.js CDN -->
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js'></script>
-        <script src='chart.js' defer></script>
-        <!-- Chart.js CDN END-->
-        <script type = "text/javascript" src='https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js'></script>
-        <script src="https://kit.fontawesome.com/dec3d6080a.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class='navbar'>
-          <img class = 'navImage' onclick="goToAnimation()" src="./image/biophoto.jpg" alt="profile image">
-          <ul class='navMenu'>
-              <li><button onclick="goToWorks()">Works</button></li>
-              <li><button onclick="goToSkills()">Skills</button></li>
-              <li><button onclick="goToLanguage()">Language</button></li>
-              <li><button onclick="goToContact()">Contact</button></li>
-              <li>
-                  <a href="log.html" target='_blank'>Log</a>
-              </li>
-          </ul>
-          <!-- <a href="#" class="navToggleButton">Fold</a> -->
-          <button class="navToggleButton"><i class="fas fa-caret-up"></i></button>
-        </nav>
-        <!-- Navigation End -->      
-        <!-- ScrollAnimation -->
-        <div id = "scollImg-sequence">
-          <canvas id="scrollScreen"></canvas>
-        </div>
-        <div class = "scrollBlank">
-          <h1 class='scrollFadeInSection' id = 'scrollText1'>Eager To Learn</h1>
-          <h1 class='scrollFadeInSection' id = 'scrollText2'>Logical Thinking</h1>
-          <h1 class='scrollFadeInSection' id = 'scrollText3'>Creativity</h1>
-          <h1 class='scrollFadeInSection' id = 'scrollText4'>YunHo</h1>
-        </div>
-        <script src="scroll.js"></script>
-        <!-- ScrollAnimation End -->
+  <html>
 
-        <!-- Section -->
-        <!-- <section class="maintitle" id='maintitle'>
+  <head>
+    <meta charset="utf-8" />
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <title>Who's YunHo?</title>
+    <script src='scrollAndFold.js' defer></script>
+    <!-- Chart.js CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js'></script>
+    <script src='chart.js' defer></script>
+    <!-- Chart.js CDN END-->
+    <script type="text/javascript"
+      src='https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js'></script>
+    <script src="https://kit.fontawesome.com/dec3d6080a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class='navbar'>
+      <img class='navImage' onclick="goToAnimation()" src="./image/biophoto.jpg" alt="profile image">
+      <ul class='navMenu'>
+        <li><button onclick="goToWorks()">Works</button></li>
+        <li><button onclick="goToSkills()">Skills</button></li>
+        <li><button onclick="goToLanguage()">Language</button></li>
+        <li><button onclick="goToContact()">Contact</button></li>
+        <li>
+          <a href="log.html" target='_blank'>Log</a>
+        </li>
+      </ul>
+      <!-- <a href="#" class="navToggleButton">Fold</a> -->
+      <button class="navToggleButton"><i class="fas fa-caret-up"></i></button>
+    </nav>
+    <!-- Navigation End -->
+    <!-- ScrollAnimation -->
+    <section id="scrollSection">
+      <div id="scollImg-sequence">
+        <canvas id="scrollScreen"></canvas>
+      </div>
+      <div class="scrollBlank">
+        <h1 class='scrollFadeInSection' id='scrollText1'>Eager To Learn</h1>
+        <h1 class='scrollFadeInSection' id='scrollText2'>Logical Thinking</h1>
+        <h1 class='scrollFadeInSection' id='scrollText3'>Creativity</h1>
+        <h1 class='scrollFadeInSection' id='scrollText4'>YunHo</h1>
+      </div>
+      <script src="scroll.js"></script>
+    </section>
+
+    <!-- ScrollAnimation End -->
+
+    <!-- Section -->
+    <!-- <section class="maintitle" id='maintitle'>
             <span>"Programming change the world"</span><br>
             <span class='me'>-YunHo-</span>
         </section> -->
 
-        <section class="works" id='works'>
-            <br><br><br><br><br><br><br><br><br><br>
-            <span class="title">Works</span>
-            <ul>
-              <li class = 'worksunit'>
-                <a class='link' href="https://unow0517.github.io/OSMBuildings_Breritband/" target="_blank">
-                    <div class='imgtext'>
-                        <img src="./image/breitband.png" alt="breitbandImage">
-                        <div>
-                            <span class='title'>Breitband network presentation on 3D map</span><br><br>
-                            <p class='description'>internet cable structure(arbitrarily structured by YunHo) shown on 3D map in Ulm. More functions are coming soon! <br/><br/>
-                            Used: HTML, CSS, JS, Openlayer, OSMbuildings, QGIS
-                            </p>
-                        </div>
-                    </div>
-                </a>
-              </li>
-                <li class = 'worksunit'>
-                  <a class='link' href="https://unow0517.github.io/openlayer8Landkreis/main.html" target="_blank">
-                      <div class='imgtext'>
-                          <img src="./image/8Landkreise.png" alt="guestbookImage">
-                          <div>
-                              <span class='title'>Show shapefiles on internet!</span><br><br>
-                              <p class='description'>Show maps, shapefiles(converted to GeoJSON), information on internet<br/><br/>
-                              Used: HTML, CSS, JS, Openlayer, layerswitcher
-                              </p>
-                          </div>
-                      </div>
-                  </a>
-                </li>
-                <!-- <li class = 'worksunit'>
+    <section class="works" id='works'>
+      <br><br><br><br><br><br><br><br><br><br>
+      <span class="title">Works</span>
+      <ul>
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/OSMBuildings_Breritband/" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/breitband.png" alt="breitbandImage">
+              <div>
+                <span class='title'>Breitband network presentation on 3D map</span><br><br>
+                <p class='description'>internet cable structure(arbitrarily structured by YunHo) shown on 3D map in Ulm.
+                  More functions are coming soon! <br /><br />
+                  Used: HTML, CSS, JS, Openlayer, OSMbuildings, QGIS
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/openlayer8Landkreis/main.html" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/8Landkreise.png" alt="guestbookImage">
+              <div>
+                <span class='title'>Show shapefiles on internet!</span><br><br>
+                <p class='description'>Show maps, shapefiles(converted to GeoJSON), information on internet<br /><br />
+                  Used: HTML, CSS, JS, Openlayer, layerswitcher
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <!-- <li class = 'worksunit'>
                   <a class='link' href="https://guestbookyunho.herokuapp.com/" target="_blank">
                       <div class='imgtext'>
                           <img src="./image/guestpage.jpg" alt="guestbookImage">
@@ -92,88 +99,92 @@
                       </div>
                   </a>
                 </li> -->
-                <li class = 'worksunit'>
-                  <a class='link' href="https://unow0517.github.io/GIS/" target="_blank">
-                      <div class='imgtext'>
-                          <img src="./image/giswebpage.jpg" alt="gisWebpage">
-                          <div>
-                              <span class='title'>GIS works in Landscape Ecology, Architecture(UNDER CONSTRUCTION)</span><br><br>
-                              <p class='description'>Few GIS Projects I had been through during my study.<br/><br/>
-                              Used: HTML, CSS, JS, ArcGIS, QGIS
-                              </p>
-                          </div>
-                      </div>
-                  </a>
-                </li>
-                <li class = 'worksunit'>
-                  <a class='link' href="https://unow0517.github.io/excelMultipleWorksheet/main.html" target="_blank">
-                      <div class='imgtext'>
-                          <img src="./image/multipleworksheet.png" alt="multipleWorksheet">
-                          <div>
-                              <span class='title'>Get Data from Multiple Worksheets in Excel</span><br><br>
-                              <p class='description'>data in multiple worksheets at a glance, boost your work speed!<br/><br/>
-                              Used: Python, package Pandas
-                              </p>
-                          </div>
-                      </div>
-                  </a>
-                </li>
-                <li class = 'worksunit'>
-                  <a class='link' href="https://unow0517.github.io/mygis/" target="_blank">
-                      <div class='imgtext'>
-                          <img src="./image/5m.png" alt="gisWebpage">
-                          <div>
-                              <span class='title'>GIS Corona Map, Stuttgart Flood Simulation</span><br><br>
-                              <p class='description'>corona map: world COVID-19 daily new cases from January 2020 to January 2021<br/>
-                                three different Stuttgart flood simulation(2m, 5m, 10m Flood) with DEM file <br/><br/>
-                              Used: HTML, CSS, JS, QGIS
-                              </p>
-                          </div>
-                      </div>
-                  </a>
-                </li>
-                <li class = 'worksunit'>
-                  <a class='link' href="https://unow0517.github.io/PyQGIS/" target="_blank">
-                      <div class='imgtext'>
-                          <img src="./image/PyQGIS.png" alt="gisWebpage">
-                          <div>
-                              <span class='title'>PyQGIS Automation</span><br><br>
-                              <p class='description'>Automatation to add map layer with multiple color and label<br/>
-                                to apply buffer tool to selected features<br/><br/>
-                              Used: HTML, CSS, JS, QGIS,Python
-                              </p>
-                          </div>
-                      </div>
-                  </a>
-                </li>
-                <li class = 'worksunit'>
-                  <a class='link' href="https://unow0517.github.io/TextComparison/" target="_blank">
-                      <div class='imgtext'>
-                          <img src="./image/textcompare.png" alt="gisWebpage">
-                          <div>
-                              <span class='title'>Text Comparison Website</span><br><br>
-                              <p class='description'>As I deal with subtitles for youtube, text comparison software is necessary.<br/>
-                                So I made it. Put two paragraphs and let computer work, then mismatching elements show up in red color.<br/><br/>
-                              Used: HTML, CSS, JS
-                              </p>
-                          </div>
-                      </div>
-                  </a>
-                </li>
-                <li class = 'worksunit'>
-                    <a class='link' href="https://unow0517.github.io/SustainableCommunity/" target="_blank">
-                        <div class='imgtext'>
-                            <img src="./image/suscomm.png" alt="susCommImage">
-                            <div>
-                                <span class='title'>SusComm</span><br><br>
-                                <p class='description'>Webpage introducing sustainable shops in Korea
-                                The very first project I made on my own. LogIn, Comment are available. Create, Read, Update, Delete All possible.<br/><br/>
-                                Used: HTML, CSS , JavaScript React, Firebase, Github, Gitflow</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!-- <li class = 'worksunit'>
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/GIS/" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/giswebpage.jpg" alt="gisWebpage">
+              <div>
+                <span class='title'>GIS works in Landscape Ecology, Architecture(UNDER CONSTRUCTION)</span><br><br>
+                <p class='description'>Few GIS Projects I had been through during my study.<br /><br />
+                  Used: HTML, CSS, JS, ArcGIS, QGIS
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/excelMultipleWorksheet/main.html" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/multipleworksheet.png" alt="multipleWorksheet">
+              <div>
+                <span class='title'>Get Data from Multiple Worksheets in Excel</span><br><br>
+                <p class='description'>data in multiple worksheets at a glance, boost your work speed!<br /><br />
+                  Used: Python, package Pandas
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/mygis/" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/5m.png" alt="gisWebpage">
+              <div>
+                <span class='title'>GIS Corona Map, Stuttgart Flood Simulation</span><br><br>
+                <p class='description'>corona map: world COVID-19 daily new cases from January 2020 to January
+                  2021<br />
+                  three different Stuttgart flood simulation(2m, 5m, 10m Flood) with DEM file <br /><br />
+                  Used: HTML, CSS, JS, QGIS
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/PyQGIS/" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/PyQGIS.png" alt="gisWebpage">
+              <div>
+                <span class='title'>PyQGIS Automation</span><br><br>
+                <p class='description'>Automatation to add map layer with multiple color and label<br />
+                  to apply buffer tool to selected features<br /><br />
+                  Used: HTML, CSS, JS, QGIS,Python
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/TextComparison/" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/textcompare.png" alt="gisWebpage">
+              <div>
+                <span class='title'>Text Comparison Website</span><br><br>
+                <p class='description'>As I deal with subtitles for youtube, text comparison software is
+                  necessary.<br />
+                  So I made it. Put two paragraphs and let computer work, then mismatching elements show up in red
+                  color.<br /><br />
+                  Used: HTML, CSS, JS
+                </p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/SustainableCommunity/" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/suscomm.png" alt="susCommImage">
+              <div>
+                <span class='title'>SusComm</span><br><br>
+                <p class='description'>Webpage introducing sustainable shops in Korea
+                  The very first project I made on my own. LogIn, Comment are available. Create, Read, Update, Delete
+                  All possible.<br /><br />
+                  Used: HTML, CSS , JavaScript React, Firebase, Github, Gitflow</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <!-- <li class = 'worksunit'>
                   <a class='link' href="https://rocky-earth-23063.herokuapp.com/manage-category.php" target="_blank">
                       <div class='imgtext'>
                           <img src="./image/food-order.png" alt="foor-order">
@@ -186,107 +197,107 @@
                       </div>
                   </a>
                 </li> -->
-                <li class = 'worksunit'>
-                    <a class='link' href="https://unow0517.github.io/BoudingBall/main.html" target="_blank">
-                        <div class='imgtext'>
-                            <img src="./image/YunHo.png" alt="thepickerimage">
-                                <div>
-                                    <span class='title'>HTML5 Animation </span><br><br>
-                                    <p class='description'>Animation With My Name
-                                    A ball moved randomly within the window, leaving footprints on my name.
-                                    Still, I should find out how to make the ball recognize only letters.</p>
-                                <br/>
-                                <p>Used: HTML, CSS , JavaScript, Illustrator, Photoshop</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class = 'worksunit'>
-                  <a class='link' href="https://unow0517.github.io/HogleMaps/" target="_blank">
-                      <div class='imgtext'>
-                          <img src="./image/hoglemap.png" alt="hoglemapImage">
-                              <div>
-                                  <span class='title'>HogleMap(UNDER CONSTRUCTION) </span><br><br>
-                                  <p class='description'>My biography on google map. 
-                                  My history, footprint are shown all over the world.
-                                  click if you want to know about my story!</p>
-                              <br/>
-                              <p>Used: HTML, CSS , JavaScript, GoogleMaps API, Github, thenounproject.com</p>
-                          </div>
-                      </div>
-                  </a>
-                </li>
-                <li class = 'worksunit'>
-                    <a class='link' href='https://unow0517.github.io/nwitter/#/' target="_blank">
-                        <div class='imgtext'>
-                            <img src="./image/twitter.png" alt="twitterimage">
-                            <div>
-                                <span class='title'>Twitter Clone Coding</span><br><br>
-                                <p class='description'>LogIn, Text, Photo Tweet CRUD, Profile</p><br>
-                                <p>Used Languages: Javascript, React, Fierbase, Github</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class = 'worksunit'>
-                    <a class='link' href='https://unow0517.github.io/react-gh-pages/' target="_blank">
-                        <div class='imgtext'>
-                            <img src="./image/reactCRUD.png" alt="youtubeimage">
-                            <div>
-                                <span class='title'>React Create,Read, Upadte, Delete </span><br><br>
-                                <p class='description'>React from CRUD to Deployment on Github</p><br>
-                                <p>Used Languages: Javascript, React</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class = 'worksunit'>
-                    <a class='link' href='https://unow0517.github.io/youtube/index.html' target="_blank">
-                        <div class='imgtext'>
-                            <img src="./image/youtube.jpg" alt="youtubeimage">
-                            <div>
-                                <span class='title'>Youtube Clone coding</span><br><br>
-                                <p class='description'>Youtube UI Design</p><br>
-                                <p>Used Languages: HTML, CSS , JavaScript</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class = 'worksunit'>
-                    <a class='link' href="https://unow0517.github.io/momentumClone/index.html" target="_blank">
-                        <div class='imgtext'>
-                            <img src="./image/momentum.jpg" alt="momentumimage">
-                            <div>
-                                <span class='title'>Chrome Extension 'Momentum'</span><br><br>
-                                <p class='description'>
-                                        <p>Current Time, To Do List, Current Temperature, location</p><br>
-                                        <p>Used Languages: HTML, CSS , JavaScript</p>
-                                </p>
-                            </div>      
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/BoudingBall/main.html" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/YunHo.png" alt="thepickerimage">
+              <div>
+                <span class='title'>HTML5 Animation </span><br><br>
+                <p class='description'>Animation With My Name
+                  A ball moved randomly within the window, leaving footprints on my name.
+                  Still, I should find out how to make the ball recognize only letters.</p>
+                <br />
+                <p>Used: HTML, CSS , JavaScript, Illustrator, Photoshop</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/HogleMaps/" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/hoglemap.png" alt="hoglemapImage">
+              <div>
+                <span class='title'>HogleMap(UNDER CONSTRUCTION) </span><br><br>
+                <p class='description'>My biography on google map.
+                  My history, footprint are shown all over the world.
+                  click if you want to know about my story!</p>
+                <br />
+                <p>Used: HTML, CSS , JavaScript, GoogleMaps API, Github, thenounproject.com</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href='https://unow0517.github.io/nwitter/#/' target="_blank">
+            <div class='imgtext'>
+              <img src="./image/twitter.png" alt="twitterimage">
+              <div>
+                <span class='title'>Twitter Clone Coding</span><br><br>
+                <p class='description'>LogIn, Text, Photo Tweet CRUD, Profile</p><br>
+                <p>Used Languages: Javascript, React, Fierbase, Github</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href='https://unow0517.github.io/react-gh-pages/' target="_blank">
+            <div class='imgtext'>
+              <img src="./image/reactCRUD.png" alt="youtubeimage">
+              <div>
+                <span class='title'>React Create,Read, Upadte, Delete </span><br><br>
+                <p class='description'>React from CRUD to Deployment on Github</p><br>
+                <p>Used Languages: Javascript, React</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href='https://unow0517.github.io/youtube/index.html' target="_blank">
+            <div class='imgtext'>
+              <img src="./image/youtube.jpg" alt="youtubeimage">
+              <div>
+                <span class='title'>Youtube Clone coding</span><br><br>
+                <p class='description'>Youtube UI Design</p><br>
+                <p>Used Languages: HTML, CSS , JavaScript</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class='worksunit'>
+          <a class='link' href="https://unow0517.github.io/momentumClone/index.html" target="_blank">
+            <div class='imgtext'>
+              <img src="./image/momentum.jpg" alt="momentumimage">
+              <div>
+                <span class='title'>Chrome Extension 'Momentum'</span><br><br>
+                <p class='description'>
+                <p>Current Time, To Do List, Current Temperature, location</p><br>
+                <p>Used Languages: HTML, CSS , JavaScript</p>
+                </p>
+              </div>
 
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class='skills' id='skills'>
-            <br><br><br><br><br><br><br><br><br><br>
-            <span class="title">Skills</span>     
-            <ul>
-                <li>
-                  <!-- trying to change canvas size -->
-                  <div class = 'divCanvas'>
-                    <canvas class = 'chart' id = 'mychart'></canvas>
-                  </div>                  
-                </li>
-                <li>
-                  <!-- trying to change canvas size -->
-                  <div class = 'divCanvas'>
-                    <canvas class = 'chart' id = 'mychart2'></canvas>
-                  </div>                  
-                </li>
-                <!-- OLD VERSION -->
-                <!-- <li>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class='skills' id='skills'>
+      <br><br><br><br><br><br><br><br><br><br>
+      <span class="title">Skills</span>
+      <ul>
+        <li>
+          <!-- trying to change canvas size -->
+          <div class='divCanvas'>
+            <canvas class='chart' id='mychart'></canvas>
+          </div>
+        </li>
+        <li>
+          <!-- trying to change canvas size -->
+          <div class='divCanvas'>
+            <canvas class='chart' id='mychart2'></canvas>
+          </div>
+        </li>
+        <!-- OLD VERSION -->
+        <!-- <li>
                     <div class='webdevelopment'> 
                         <span class='title'>Web Development</span>
                         <img class='htmlcssjs' src="./image/programming.png" alt="programming">
@@ -314,34 +325,35 @@
                         </div>
                     </div>
                 </li> -->
-                <!-- OLD VERSION END-->
-            </ul>
-        </section>
-        <section class="language"  id='language'>
-            <br><br><br><br><br><br><br><br><br><br>
-            <span class='title'>Language</span>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <span>English</span>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <span>German</span>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <span>Korean</span>
-                </li>
-            </ul>
-        </section>
-        <section class="contact"  id='contact'>
-            <br><br><br><br><br><br><br><br><br><br>
-            <span class='title'>Contact</span>
-            <ul>
-                <li>unow0517@gmail.com</li>
-            </ul>
-        </section>
+        <!-- OLD VERSION END-->
+      </ul>
+    </section>
+    <section class="language" id='language'>
+      <br><br><br><br><br><br><br><br><br><br>
+      <span class='title'>Language</span>
+      <ul>
+        <li>
+          <img src="" alt="">
+          <span>English</span>
+        </li>
+        <li>
+          <img src="" alt="">
+          <span>German</span>
+        </li>
+        <li>
+          <img src="" alt="">
+          <span>Korean</span>
+        </li>
+      </ul>
+    </section>
+    <section class="contact" id='contact'>
+      <br><br><br><br><br><br><br><br><br><br>
+      <span class='title'>Contact</span>
+      <ul>
+        <li>unow0517@gmail.com</li>
+      </ul>
+    </section>
 
-    </body>
-</html>
+  </body>
+
+  </html>
