@@ -33,7 +33,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'PT Serif', serif;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   list-style: none;
 }
@@ -47,6 +47,7 @@ button {
 
 body {
   background-color: var(--light-weak);
+  overflow-x: hidden;
 }
 
 section {
@@ -82,7 +83,8 @@ section>.title {
 
 .nav-item {
   color: var(--light-weak);
-  font-size: var(--font-small)
+  font-size: var(--font-small);
+  font-weight: 500;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -106,6 +108,17 @@ nav img {
 
 nav img:hover {
   border: 2px solid var(--light-weak);
+}
+
+nav li {
+  cursor: pointer;
+}
+
+nav a,
+nav a:hover,
+nav a:active {
+  text-decoration: none;
+  color: var(--light-weak);
 }
 
 /* nav ul {
@@ -142,6 +155,7 @@ button:hover {
   text-align: center;
   margin-top: 200px;
   font-size: 60px;
+  font-weight: 700;
   color: var(--strong);
 }
 
@@ -170,6 +184,7 @@ button:hover {
 .works>ul>li>a:hover {
   color: var(--light-weak);
   background-color: var(--dark-weak);
+  text-decoration: none;
 }
 
 .works img {
@@ -218,16 +233,14 @@ button:hover {
   }
 }
 
-/* .skills > .chart{
-width: 500px;
-height: 500px;
-background-color:black;
+/* .skills>.chart {
+  width: 100%;
+  background-color: black;
 } */
 
-/* .skills .divCanvas{
-width: 10%;
-height: 100px;
-
+/* .skills .divCanvas {
+  width: 10%;
+  height: 100px;
 } */
 
 /* OLD VERSION */
@@ -284,7 +297,7 @@ height: 100px;
   justify-content: space-evenly;
   font-size: var(--font-small);
   padding: calc(var(--padding)*20) 0;
-  color: var(--blue);
+  color: var(--dark-strong);
 }
 
 
@@ -296,14 +309,13 @@ height: 100px;
   font-size: var(--small);
   padding: calc(var(--padding)*20) 0;
   font-size: calc(var(--font-large)*0.7);
-  color: var(--blue);
+  color: var(--dark-strong);
 }
 
 
 @media screen and (max-width:768px) {
 
-  /* Nav*/
-  .navbar {
+  /* .navbar {
     padding-bottom: 0;
   }
 
@@ -331,7 +343,7 @@ height: 100px;
   .navMenu.active,
   .navImage.active {
     display: flex;
-  }
+  } */
 
 
   /*Works */
@@ -374,7 +386,7 @@ height: 100px;
     justify-content: center;
   }
 
-  .navToggleButton.unfolded {
-    rotate: 90deg;
-  }
+  /* .navToggleButton.unfolded {
+  rotate: 90deg;
+} */
 }
