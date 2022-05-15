@@ -44,3 +44,7 @@ function goToContact() {
     block: 'start'
   });
 }
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
